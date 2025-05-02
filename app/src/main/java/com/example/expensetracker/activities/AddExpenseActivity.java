@@ -76,7 +76,11 @@ public class AddExpenseActivity extends AppCompatActivity {
 
                         float converted = amount * (float) usdRate;
 
-                        Expense expense = new Expense(title, converted, category);
+                        float originalAmount = amount;
+                        float convertedAmount = originalAmount * (float) usdRate;
+
+                        Expense expense = new Expense(title, originalAmount, baseCurrency, convertedAmount, category);
+
                         ArrayList<Expense> expenses = SharedPrefManager.getExpenses(getApplicationContext());
                         expenses.add(expense);
                         SharedPrefManager.saveExpenses(getApplicationContext(), expenses);
