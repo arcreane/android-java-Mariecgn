@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ExpenseTracker</string>
+    <string name="save">Enregistrer</string>
+    <string name="title_hint">Titre de la dépense</string>
+    <string name="amount_hint">Montant</string>
+    <string name="category_hint">Catégorie</string>
+
+    <string-array name="expense_categories">
+        <item>Alimentation</item>
+        <item>Transport</item>
+        <item>Divertissement</item>
+        <item>Santé</item>
+        <item>Autre</item>
+    </string-array>
+
+</resources>
